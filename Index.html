@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Dropdown</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add logo in the head section -->
+    <style>
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            max-width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo container at the top -->
+    <div class="logo-container">
+        <img src="logo.png" alt="Company Logo">
+    </div>
+    <div class="1-guide-faq">
+        <div class="1-content--inner">
+            <div class="p-main" >
+                <div class="p-main__title">
+                    <h1 class="faq-title">Frequently Asked Questions</h1>
+                    <p class="p-main__title-description">
+                        Robert.T 1994 Optical FAQ section.
+                        <br>
+                        You can find the answer for your question here, if they're not, please don't hesitate to contact us via Whatsapp +60166662189.
+                    </p>
+                </div>
+            </div>
+        </div>
+    <div class="faq-container">
+        <!-- Navigation for sections -->
+        <nav class="faq-nav">
+            <ul>
+                <li><a href="#warranty-information">Warranty Information</a></li>
+                <li><a href="#lens-information">Lens Information</a></li>
+                <li><a href="#making-a-purchase">Making a Purchase</a></li>
+                <li><a href="#shop-information">Shop Information</a></li>
+            </ul>
+        </nav>
+        <nav class="faq-nav"
+            <ul>
+                <li><a href="#product-information">Product Information</a></li>
+                <li><a href="#after-sales-service">After Sales Service</a></li>
+            </ul>
+        </nav>
+
+        <!-- Warranty Information Section -->
+        <div class="faq-section" id="warranty-information">
+            <h2>Warranty Information</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">What is the duration of your warranty, and what does it cover?</div>
+                <div class="faq-answer">
+                    Example Answer Format
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">What are the specific terms and conditions for lens warranties?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">What are the specific terms and conditions for frame warranties?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Is my warranty applicable at any optical shop location?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">If I've lost my warranty card, is my eyewear still covered under warranty?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you offer warranty services after the warranty period has expired?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Does the warranty cover lost glasses?</div>
+                <div class="faq-answer"></div>
+            </div>
+
+            <!-- Add more questions as needed -->
+        </div>
+
+        <!-- Lens Information Section -->
+        <div class="faq-section" id="lens-information">
+            <h2>Lens Information</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can I exchange my lenses if my prescription doesn't feel right?</div>
+                <div class="faq-answer"></div>
+            </div>            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Are scratches on the lenses covered by the warranty?</div>
+                <div class="faq-answer"></div>
+            </div>            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you make my lenses thinner if I find them too thick?</div>
+                <div class="faq-answer"></div>
+            </div>            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can I change my single vision lenses to progressive lenses?</div>
+                <div class="faq-answer"></div>
+            </div>            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Is it possible to switch my progressive lenses to single vision or reading lenses?</div>
+                <div class="faq-answer"></div>
+            </div>            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Why do my new lenses with the same prescription feel different from my old glasses?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <!-- Add more questions as needed -->
+        </div>
+
+        <!-- Making a Purchase Section -->
+        <div class="faq-section" id="making-a-purchase">
+            <h2>Making a Purchase</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Do I need a prescription to buy glasses at your shop?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Do you offer eye exams for children?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">What payment methods do you accept?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can I pay with a credit card?</div>
+                <div class="faq-answer"></div>
+            </div>            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Do you offer shipping for your products?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you make glasses with the same prescription as my current pair?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can I get an eye test without purchasing glasses?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">How long will it take to get my new glasses made?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can I have an eye test while wearing contact lenses?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <!-- Add more questions as needed -->
+        </div>
+
+        <!-- Shop Information Section -->
+        <div class="faq-section" id="shop-information">
+            <h2>Shop Information</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Where are your shops located, and what are your opening hours?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <!-- Add more questions as needed -->
+        </div>
+
+        <!-- Product Information Section -->
+        <div class="faq-section" id="product-information">
+            <h2>Product Information</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can I purchase just the frames?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Do you offer options for thinner lenses?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Is there an extra fee for lenses that correct astigmatism?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you make reading glasses?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Do you provide lenses with UV protection?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you make progressive and office progressive lenses?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Do you offer Transitions lenses?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you make glasses for people with a squint?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you provide non-prescription glasses?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Do you have frames suitable for children?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Are there any additional charges on top of the listed prices?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you replace lenses in frames purchased from another shop?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">How can I reserve a limited edition or collaboration product?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <!-- Add more questions as needed -->
+        </div>
+
+        <!-- After Sales Service Section -->
+        <div class="faq-section" id="after-sales-service">
+            <h2>After Sales Service</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">What after-sales services do you offer?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you help with a scratch on my lens?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you adjust frames purchased from other optical shops?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can I get my frames adjusted at a different shop than where I bought them?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Can you fix loose nose-pad and hinge screws?</div>
+                <div class="faq-answer"></div>
+            </div>
+            <!-- Add more questions as needed -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
